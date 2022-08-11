@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Inter Font Family 400, 700, 900 */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap");
+/* 
+* {
+  font-family: "Inter", "sans-serif";
+} */
+
+/* Variables */
+
+:root {
+  --black: #000000;
+  --white: #ffffff;
+
+  --pageBG: #f4f4f0;
+  --pageText: #000000;
+  --scope: #0066ff;
+}
+
+[data-theme="dark"] {
+  --pageBG: #000000;
+  --pageText: #f4f4f0;
+  --scope: #0066ff;
+}
+
+[data-theme="terminal"] {
+  --pageBG: #000000;
+  --pageText: #00fd15;
+  --scope: #ff1717;
+}
+
+body {
+  /* background: red; */
+  background-color: black;
+  color: #cbe5ff !important;
+  @apply bg-black text-sm overflow-x-hidden !important;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply text-white capitalize !important;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+ul {
+  @apply m-0 p-0 list-none !important;
+}
+a,
+a:hover {
+  @apply no-underline !important;
+}
+
+input:focus,
+button:focus,
+textarea:focus {
+  @apply outline-none !important;
+}
+
+input,
+textarea {
+  @apply text-white capitalize !important;
+}
+
+.progress {
+  height: 60px !important;
+  border-radius: 50px !important;
+  margin-top: 50px;
+  background-color: #000000 !important;
+  overflow: unset !important;
+}
+
+.progress-bar {
+  background-color: #0d2611 !important;
+  position: relative;
+  z-index: 2;
+  border-radius: 50px 0px 0 50px;
+}
+
+a {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}

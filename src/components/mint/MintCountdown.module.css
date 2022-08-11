@@ -1,0 +1,26 @@
+.singleIco a {
+  color: black;
+  padding-right: 10px;
+  font-size: 18px;
+}
+.singleIco h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.singleIco h5 {
+  font-size: 18px;
+}
+
+.singleIco a:hover {
+  color: #f6d266;
+}
+
+.days,
+.minutes,
+.hours,
+.seconds {
+  font-size: 36px;
+  font-weight: 700;
+  color: black;
+}
